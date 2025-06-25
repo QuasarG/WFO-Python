@@ -1,0 +1,6 @@
+Fitness Function:x[0]**2+x[1]**2
+Variable Dimensions:2
+Upper Bound:[10, 10]
+Lower Bound:[-10, -10]
+The minimal objective function value: 0.0
+The best solution: [0. 0.]
