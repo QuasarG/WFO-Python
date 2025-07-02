@@ -24,21 +24,56 @@ Kaiping Luo. Water Flow Optimizer: a nature-inspired evolutionary algorithm for 
 
 ```
 WFO-Python/
-├── WFO.py              # 核心算法实现
-├── WFO_exe.py          # GUI可执行界面 (主程序)
-├── Demo.py             # 算法使用示例
-├── CEC2022.py          # CEC2022基准测试函数集
-├── temp.txt            # 临时结果文件
-├── pyinstaller.exe     # 打包配置文件
-├── icon/               # 图标资源文件夹
-│   ├── image.png       # 程序图标
-│   └── Water flow.ico  # 窗口图标
-└── input_data/         # 基准测试数据文件夹
-    ├── M_*.txt         # 旋转矩阵文件
-    ├── shift_data_*.txt # 位移向量文件
-    ├── shuffle_data_*.txt # 打乱数据文件
-    └── Rand_Seeds.txt  # 随机种子文件
+├── 📁 核心模块
+│   ├── WFO.py                      # 核心算法实现
+│   ├── WFO_exe.py                  # GUI可执行界面 (主程序)
+│   ├── Demo.py                     # 算法使用示例
+│   ├── CEC2022.py                  # CEC2022基准测试函数集
+│   ├── README.md                   # 项目说明文档
+│   └── 项目结构说明.md              # 详细结构说明
+├── 📁 docs/ (文档和指南)
+│   ├── rosenbrock_详解.py          # Rosenbrock函数详细解析
+│   ├── 自定义测试函数指南.py        # 创建自定义测试函数指南
+│   ├── WFO算法详解.py             # WFO算法机制深度解析
+│   ├── 项目扩展指南.py             # 项目功能扩展完整指南
+│   └── 性能优化分析指南.py         # 性能优化和结果分析方法
+├── 📁 examples/ (示例和扩展)
+│   └── WFO_optimized_style.py      # WFO算法优化版本示例
+├── 📁 build/ (构建工具)
+│   └── pyinstaller.exe             # 打包配置文件
+├── 📁 utils/ (实用工具)
+│   ├── temp.txt                    # 临时结果文件
+│   └── try.txt                     # 测试文件
+├── 📁 icon/ (图标资源)
+│   ├── image.png                   # 程序图标
+│   └── Water flow.ico              # 窗口图标
+└── 📁 input_data/ (基准测试数据)
+    ├── M_*.txt                     # 旋转矩阵文件
+    ├── shift_data_*.txt            # 位移向量文件
+    ├── shuffle_data_*.txt          # 打乱数据文件
+    └── Rand_Seeds.txt              # 随机种子文件
 ```
+
+## 快速开始
+
+### 🚀 基础使用
+```bash
+# 1. GUI界面 (推荐新手)
+python WFO_exe.py
+
+# 2. 命令行示例
+python Demo.py
+
+# 3. 学习算法原理
+python docs/WFO算法详解.py
+```
+
+### 📚 学习路径
+1. **入门**: 运行 `WFO_exe.py` 体验GUI界面
+2. **理解**: 阅读 `docs/WFO算法详解.py` 了解算法原理
+3. **实践**: 参考 `Demo.py` 编写自己的优化代码
+4. **进阶**: 学习 `docs/` 目录下的各种指南
+5. **扩展**: 使用 `docs/项目扩展指南.py` 添加新功能
 
 ## 功能特性
 
